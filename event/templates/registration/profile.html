@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<p></p><h3 style="color:blue"> Profile </h3><h6 style="color: blue">----------------</h6></p>
+
+{% for item in profile %}
+
+<p><h5>Name</h5>
+<h4>{{ item.name }}</h4></p></br>
+
+<p><h5>Email</h5>
+<h4>{{ item.email }}</h4></p></br>
+
+<p><h5>Address</h5>
+<h4>{{ item.address }}</h4></p></br>
+
+<p><h5>Contact</h5>
+<h4>{{ item.phone }}</h4></p></br>
+
+<p><h5>About</h5>
+<h4>{{ item.comments}}</h4></p>
+
+{% endfor %}
+
+
+{% endblock %}
